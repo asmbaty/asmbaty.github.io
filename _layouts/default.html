@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+{% include head.html %}
+
+<body>
+    <div class="page-wrap">
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3" id="sidebar">
+                        <img class="rounded-circle account-img" src="/assets/img/profile.jpg">
+                        <p><strong>Aharon Smbatyan</strong></p>
+                        <p class="text-muted "> aharon.smbatyan@gmail.com</p>
+            
+                        <nav class="nav flex-column">
+                            <a class="nav-link" aria-current="page" href="/index.html">Blog</a>
+                            <a class="nav-link" href="/portfolio.html">Portfolio</a>
+                        </nav>
+            
+                        <div id="social-links">
+                            <a class="btn fa fa-lg fa-linkedin" href="https://www.linkedin.com/in/aharon-smbatyan-6137825b/" target="_blank"></a>
+                            <a class="btn fa fa-lg fa-twitter" href="https://twitter.com/AharonSmbatyan" target="_blank"></a>
+                            <a class="btn fa fa-lg fa-facebook" href="https://www.facebook.com/aharon.smbatyan/" target="_blank"></a>
+                            <a class="btn fa fa-lg fa-github" href="https://github.com/asmbaty" target="_blank"></a>
+            
+                        </div>
+            
+                    </div>
+                    <div class="col-9">
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="/assets/js/vendor/jquery.min.js"></script>
+    <script src="/assets/js/vendor/semantic.min.js"></script>
+    <script type="/assets/js/main.js"></script>
+</body>
+
+</html>
